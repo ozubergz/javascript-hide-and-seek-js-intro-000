@@ -20,12 +20,12 @@ function increaseRankBy(n) {
 
   for(let i = 0; i < firstChildren.length; i++) {
     let list = firstChildren[i]
-    list.innerText = parseInt(list.textContent, 10) + n
+    list.innerText = parseInt(list.textContent) + n
   }
 
   for(let i = 0; i < secondChildren.length; i++) {
     let list = secondChildren[i]
-    list.innerText = parseInt(list.textContent, 10) + n
+    list.innerText = parseInt(list.textContent) + n
   }
 
 }

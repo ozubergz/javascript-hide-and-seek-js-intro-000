@@ -15,5 +15,11 @@ function increaseRankBy(n) {
   let firstList = rankedList[0];
   let secondList = rankedList[1];
 
-  
+  let firstChildren = firstList.children;
+
+  for(let i = 0; i < firstChildren.length; i++) {
+    let list = firstChildren[i]
+    list.innerText = parseInt(list.textContent, 10) + n
+  }
+
 }
